@@ -32,7 +32,7 @@ window.ChangeCard = (i) => {
   renderButtons()
 
 };
-renderButtons()
+
 
 function renderButtons() {
   buttonContainer.innerHTML = categories.map((cat, i) => {
@@ -43,3 +43,8 @@ function renderButtons() {
     >${cat.name}</button>`;
   }).join("");
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("hei", card && "ja")
+  window.ChangeCard(0);
+});
